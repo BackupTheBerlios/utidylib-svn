@@ -1,0 +1,9 @@
+uTidylib (0.2)
+    * More tests for encoding type stuff
+    * Improve packaging on win32 (include ctypes and libtidy)
+    * Greatly simplify implementation by using tidyParseOptValue() API
+ -- Cory Dodt (corydodt@twistedmatrix.com)
+
+uTidylib (0.1)
+    * Initial release.
+ -- Cory Dodt (corydodt@twistedmatrix.com)
