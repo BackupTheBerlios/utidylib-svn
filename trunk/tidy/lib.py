@@ -174,8 +174,7 @@ class DocumentFactory(FactoryDict):
                     raise errors[match[0]](doc.errors[-1].message)
     def load(self, doc, arg, loader):
         loader(doc.cdoc, arg)
-        if not doc.errors:            
-            _tidy.CleanAndRepair(doc.cdoc)
+        _tidy.CleanAndRepair(doc.cdoc)
     def loadFile(self, doc, filename):
         self.load(doc, filename, _tidy.ParseFile)
     def loadString(self, doc, st):

@@ -3,7 +3,6 @@ from distutils.core import setup
 from distutils.command.install_data import install_data
 from distutils.command.bdist_wininst import bdist_wininst
 from distutils import sysconfig
-import gendoc
 
 # pack the doc in as data files
 apidoc=path('apidoc')
