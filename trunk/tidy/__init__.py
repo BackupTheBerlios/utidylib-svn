@@ -23,11 +23,6 @@ For example:
   </body>
 </html>
 
-For options like newline and output_encoding, which must be set to one of a
-fixed number of choices, you can provide either the numeric or string version
-of the choice; so both tidy.parseString('<HTML>foo</html>', newline=2) and
-tidy.parseString('<HTML>foo</html>', newline='CR') do the same thing.  
-
 There are no plans to support other features of TidyLib, such as document-tree
 traversal, since Python has several quality DOM implementations. (The author
 uses Twisted's implementation, twisted.web.microdom).
